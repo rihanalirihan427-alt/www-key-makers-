@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M.D KEY MAKERS & LOCK REPAIR - Professional Locksmith Services</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, sans-serif; }
+    body { background-color: #f8f9fa; color: #212529; line-height: 1.6; padding-bottom: 80px; scroll-behavior: smooth; }
+    
+    /* Top Professional Bar */
+    .top-bar { background-color: #1a1a1a; color: #ffc107; text-align: center; font-size: 0.95rem; font-weight: 700; padding: 12px; text-transform: uppercase; letter-spacing: 1.5px; border-bottom: 3px solid #ffc107; }
+
+    /* Header */
+    header { background: #ffffff; color: #1a1a1a; padding: 15px 25px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-bottom: 2px solid #e9ecef; }
+    .brand h1 { font-size: 1.4rem; font-weight: 800; color: #1a1a1a; text-transform: uppercase; letter-spacing: 0.5px; }
+    .brand p { font-size: 0.85rem; font-weight: 600; color: #6c757d; }
+    .head-call { background: #dc3545; color: white; padding: 10px 20px; font-weight: 700; text-decoration: none; border-radius: 30px; font-size: 0.95rem; box-shadow: 0 4px 10px rgba(220,53,69,0.3); transition: 0.2s; white-space: nowrap; }
+    .head-call:hover { background: #c82333; }
+
+    /* Hero Section */
+    .hero { background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&w=1200&q=80') center/cover; color: white; text-align: center; padding: 60px 20px; border-bottom: 5px solid #ffc107; }
+    .hero h1 { font-size: 2.2rem; font-weight: 800; color: #ffc107; margin-bottom: 15px; text-transform: uppercase; line-height: 1.2; letter-spacing: 0.5px; }
+    .hero p { font-size: 1.1rem; color: #e9ecef; max-width: 800px; margin: 0 auto 25px auto; font-weight: 400; line-height: 1.6; }
+    
+    /* Call Button in One Line */
+    .hero-btn { background: #dc3545; color: white; font-size: 1.1rem; font-weight: 700; padding: 15px 25px; text-decoration: none; border-radius: 35px; display: inline-block; box-shadow: 0 6px 15px rgba(220,53,69,0.4); border: 2px solid #fff; transition: 0.2s; white-space: nowrap; max-width: 100%; }
+    .hero-btn:hover { background: #c82333; transform: translateY(-2px); }
+
+    /* Container & Services */
+    .container { max-width: 1100px; margin: auto; padding: 40px 15px; }
+    .section-title { text-align: center; font-size: 1.7rem; color: #1a1a1a; margin-bottom: 35px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; }
+    
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+    .card { background: white; border-radius: 12px; padding: 25px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.06); border-top: 5px solid #1a1a1a; display: flex; flex-direction: column; justify-content: space-between; transition: 0.3s; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+    .card h3 { font-size: 1.25rem; margin-bottom: 12px; color: #1a1a1a; font-weight: 700; }
+    .card p { font-size: 0.95rem; color: #6c757d; margin-bottom: 20px; line-height: 1.5; }
+    
+    .card-call-btn { background: #28a745; color: white; font-weight: 700; padding: 12px; text-decoration: none; border-radius: 8px; font-size: 1rem; display: block; box-shadow: 0 3px 8px rgba(40,167,69,0.3); transition: 0.2s; white-space: nowrap; }
+    .card-call-btn:hover { background: #218838; }
+
+    /* Reviews Section */
+    .reviews-section { background: #ffffff; padding: 50px 15px; border-top: 1px solid #e9ecef; border-bottom: 1px solid #e9ecef; }
+    .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; max-width: 1100px; margin: auto; }
+    .review-card { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; padding: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.03); }
+    .rating { color: #ffc107; font-size: 1.3rem; margin-bottom: 10px; font-weight: bold; }
+    .review-text { font-style: italic; color: #495057; margin-bottom: 15px; font-size: 0.95rem; line-height: 1.5; }
+    .reviewer-name { font-weight: 700; color: #1a1a1a; font-size: 0.9rem; }
+
+    /* Footer */
+    footer { background: #1a1a1a; color: #adb5bd; text-align: center; padding: 30px 15px; font-size: 0.9rem; }
+    footer h4 { color: #ffffff; font-size: 1.1rem; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    footer p { margin-bottom: 5px; }
+    footer a { color: #ffc107; text-decoration: none; font-weight: 600; }
+
+    /* Floating Call Button */
+    .float-call { position: fixed; bottom: 20px; right: 20px; background: #dc3545; color: white; font-weight: 700; padding: 14px 22px; border-radius: 50px; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.3); font-size: 1.05rem; z-index: 1000; display: flex; align-items: center; gap: 8px; border: 2px solid #fff; white-space: nowrap; }
+  </style>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">⚡ Fast 10 to 15 Minutes Emergency Doorstep Response</div>
+
+  <!-- Header -->
+  <header>
+    <div class="brand">
+      <h1>M.D Key Makers & Lock Repair</h1>
+      <p>Electronic City & Shikaripalya, Bangalore</p>
+    </div>
+    <a href="tel:9353436190" class="head-call">📞 Call: 93534 36190</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div style="max-width: 850px; margin: auto;">
+      <h1>Locked Out? Lost Your Keys? We Are Here to Help!</h1>
+      <p>
+        Facing an emergency lockout situation at your home, office, or vehicle? Don't panic! Our certified professional locksmith technicians arrive at your location within 10 to 15 minutes to provide fast, damage-free opening and repair solutions.
+      </p>
+      <a href="tel:9353436190" class="hero-btn">📞 CALL NOW: 93534 36190</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="container">
+    <h2 class="section-title">24/7 EMERGENCY LOCKSMITH SERVICES</h2>
+    <div class="services-grid">
+      
+      <div class="card">
+        <div>
+          <h3>🏠 House Door Lock Repair</h3>
+          <p>Main door lock installation, Godrej lock repair, handle lock fixing, and on-site key duplication.</p>
+        </div>
+        <a href="tel:9353436190" class="card-call-btn">📞 Call Now</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>🔑 Bike Key Duplication</h3>
+          <p>Precision duplicate keys, sensor keys, ignition lock repair, and broken key extraction for all bike models.</p>
+        </div>
+        <a href="tel:9353436190" class="card-call-btn">📞 Call Now</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>🚨 Emergency Door Unlocking</h3>
+          <p>Locked out of your home or vehicle? Rapid, non-destructive emergency unlocking service available 24/7.</p>
+        </div>
+        <a href="tel:9353436190" class="card-call-btn">📞 Call Now</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>🔧 Lock Fitting & Replacement</h3>
+          <p>Complete lock set replacement, latch repair, high-security padlocks, and robust deadbolt installation.</p>
+        </div>
+        <a href="tel:9353436190" class="card-call-btn">📞 Call Now</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>🛡️ Expert Key Repair & Lock Solutions</h3>
+          <p>Roller shutter lock repair, office glass door locks, master key systems, and secure cabinet key making.</p>
+        </div>
+        <a href="tel:9353436190" class="card-call-btn">📞 Call Now</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>🚗 Car Key Programming</h3>
+          <p>Advanced remote key generation, flip keys, and transponder chip programming using professional Xtool diagnostic tools.</p>
+        </div>
+        <a href="tel:9353436190" class="card-call-btn">📞 Call Now</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Live Customer Reviews Section -->
+  <section class="reviews-section">
+    <div style="max-width: 1100px; margin: auto;">
+      <h2 class="section-title">⭐ Verified Customer Reviews (4.9 / 5.0 Rating)</h2>
+      <div class="reviews-grid">
+        
+        <div class="review-card">
+          <div class="rating">★★★★★</div>
+          <p class="review-text">"I had lost my car key, but they made a new key for me very quickly and professionally."</p>
+          <p class="reviewer-name">— Google Local Guide Review</p>
+        </div>
+
+        <div class="review-card">
+          <div class="rating">★★★★★</div>
+          <p class="review-text">"Fast and reliable doorstep locksmith service near Wipro gate, Shikaripalya. Highly recommended!"</p>
+          <p class="reviewer-name">— Verified Local Customer</p>
+        </div>
+
+        <div class="review-card">
+          <div class="rating">★★★★★</div>
+          <p class="review-text">"The best key maker in Electronic City. Opened my main door lock within 10 minutes without any damage."</p>
+          <p class="reviewer-name">— Verified Resident</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h4>M.D KEY MAKERS & LOCK REPAIR</h4>
+    <p>Location: Shikaripalya Main Road, Electronic City Phase 1, Bangalore, Karnataka 560100</p>
+    <p>Contact: <a href="tel:9353436190">93534 36190</a></p>
+    <br>
+    <p>© 2026 M.D Key Makers & Lock Repair. All rights reserved.</p>
+  </footer>
+
+  <!-- Mobile Floating Call Button -->
+  <a href="tel:9353436190" class="float-call">📞 Call 93534 36190</a>
+
+</body>
+</html>
